@@ -155,7 +155,7 @@ h2 {
   line-height: 3rem;
   letter-spacing: 0.0125rem;
   color: #333333;
-  margin: 0 0 4% 0; }
+  margin: 4% 0 4% 0; }
 
 p,
 li {
@@ -169,6 +169,10 @@ li {
 @media (max-width: 500px) {
   h2 {
     text-align: center; } }
+
+@media (max-width: 713px) {
+  section {
+    margin: 10% 0 10% 0; } }
 
 nav {
   background-color: white;

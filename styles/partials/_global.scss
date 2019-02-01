@@ -25,4 +25,11 @@ li {
   h2 {
     text-align: center;
   }
+
+}
+
+@media (max-width: 713px) {
+  section {
+    margin: 10% 0 10% 0;
+  }
 }
