@@ -1,0 +1,25 @@
+@mixin text-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 4rem;
+  color: #ffffff;
+}
+
+@mixin text-h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 2.125rem;
+  letter-spacing: 0.0125rem;
+  color: $primary-color;
+}
+
+@mixin text-content {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2.125rem;
+  letter-spacing: 0.0125rem;
+  color: $primary-color;
+}

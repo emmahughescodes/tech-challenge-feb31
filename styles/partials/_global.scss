@@ -1,0 +1,23 @@
+.wrapper {
+    max-width: 1640px;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+html {
+    font-size: 100%
+}
+
+section {
+    border: 1px solid blue;
+    margin: 5% 0;
+}
+
+h2  {
+    @include text-h2;
+}
+
+p, li {
+    @include text-content;
+}
