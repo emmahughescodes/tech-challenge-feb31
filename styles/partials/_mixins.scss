@@ -3,24 +3,24 @@
   font-weight: 600;
   font-style: italic;
   font-size: 4rem;
-  color: #ffffff;
+  color: white;
 }
 
 @mixin text-h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 3rem;
-  line-height: 2.125rem;
+  line-height: 3rem;
   letter-spacing: 0.0125rem;
   color: $primary-color;
-  margin: 2% 0;
+  margin: 0 0 4% 0;
 }
 
 @mixin text-content {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 2.125rem;
+  line-height: 2rem;
   letter-spacing: 0.0125rem;
   color: $primary-color;
 }
