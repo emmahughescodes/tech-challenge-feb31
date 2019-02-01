@@ -23,3 +23,12 @@
   letter-spacing: 0.0125rem;
   color: $primary-color;
 }
+
+@mixin text-stats {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.125rem;
+  letter-spacing: 0.0125rem;
+  color: white;
+}

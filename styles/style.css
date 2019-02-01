@@ -273,7 +273,7 @@ img {
   width: 25%;
   display: block; }
 
-.stat:hover .overlay {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -287,21 +287,28 @@ img {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: #cce500;
   width: 100%;
   height: 100%;
   opacity: 0.8;
-  color: black; }
-
-.stats-image img {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  display: block;
-  width: 100%; }
-
-.overlay {
-  text-align: center; }
+  z-index: 1;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5); }
 
 .overlay-text {
   display: block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.125rem;
+  letter-spacing: 0.0125rem;
+  color: white;
   color: black; }
+
+.overlay:hover {
+  background: #cce500; }
+  .overlay:hover .overlay-text {
+    color: black; }
+
+.stats-image img {
+  display: block;
+  width: 100%; }
