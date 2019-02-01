@@ -140,8 +140,7 @@ h1, h2, h3, h4 {
 .wrapper {
   max-width: 1640px;
   width: 90%;
-  margin: 0 auto;
-  border: 1px solid black; }
+  margin: 0 auto; }
 
 html {
   font-size: 100%; }
@@ -249,12 +248,31 @@ img {
   -ms-flex-pack: center;
   justify-content: center; }
   .title h1 {
+    background: rgba(187, 185, 185, 0.5);
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-style: italic;
     font-size: 4rem;
     color: #ffffff;
     width: 75%; }
+
+.menu {
+  font-size: 2.5rem;
+  display: none; }
+
+@media (max-width: 540px) {
+  .title h1 {
+    font-size: 3rem; } }
+
+@media (max-width: 505px) {
+  .menu {
+    display: block; }
+  .demo {
+    display: none; } }
+
+@media (max-width: 417px) {
+  .title h1 {
+    font-size: 1.75rem; } }
 
 .campaign-text {
   width: 50%;
@@ -341,6 +359,21 @@ img {
     font-size: 1rem; }
   .stat {
     margin: 0; } }
+
+@media (max-width: 565px) {
+  .stats-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .stat {
+    width: 100%;
+    margin: 3% 0; }
+  .stat:nth-child(2) {
+    width: 100%; }
+  .overlay-text {
+    font-size: 2rem;
+    padding: 10px; } }
 
 .gallery {
   display: -webkit-box;

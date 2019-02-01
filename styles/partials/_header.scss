@@ -59,8 +59,36 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
   h1 {
+    background: rgba(187, 185, 185, 0.5);
     @include text-title;
     width: 75%;
+  }
+}
+
+.menu {
+  font-size: 2.5rem;
+  display: none;
+}
+
+@media  (max-width: 540px) {
+  .title h1 {
+    font-size: 3rem;
+  }
+}
+
+@media  (max-width: 505px) {
+  .menu {
+    display: block;
+  }
+  .demo {
+    display: none;
+  }
+}
+
+@media  (max-width: 417px) {
+  .title h1 {
+    font-size: 1.75rem;
   }
 }
