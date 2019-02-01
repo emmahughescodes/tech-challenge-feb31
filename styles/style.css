@@ -156,7 +156,8 @@ h2 {
   font-size: 3rem;
   line-height: 2.125rem;
   letter-spacing: 0.0125rem;
-  color: #333333; }
+  color: #333333;
+  margin: 2% 0; }
 
 p, li {
   font-family: "Open Sans", sans-serif;
@@ -179,7 +180,7 @@ nav {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  z-index: 1;
+  z-index: 5;
   -webkit-box-shadow: 0px 1.5px #EEEEEE;
   box-shadow: 0px 1.5px #EEEEEE; }
 
@@ -266,12 +267,27 @@ img {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
-  flex-direction: row; }
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto; }
 
 .stat {
   position: relative;
-  width: 25%;
-  display: block; }
+  width: calc((100% / 3));
+  display: block;
+  margin: 0 50px; }
+
+.stat:first-child {
+  margin-left: 0; }
+
+.stat:nth-child(2) {
+  width: calc((100% / 3));
+  margin: 0; }
+
+.stat:last-child {
+  margin-right: 0; }
 
 .overlay {
   position: absolute;
@@ -292,7 +308,10 @@ img {
   opacity: 0.8;
   z-index: 1;
   text-align: center;
-  background: rgba(255, 255, 255, 0.5); }
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s; }
 
 .overlay-text {
   display: block;
@@ -312,3 +331,43 @@ img {
 .stats-image img {
   display: block;
   width: 100%; }
+
+@media (max-width: 1260px) {
+  .overlay-text {
+    font-size: 1.5rem; } }
+
+@media (max-width: 975px) {
+  .overlay-text {
+    font-size: 1rem; }
+  .stat {
+    margin: 0; } }
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.item {
+  width: calc(100% / 3);
+  margin: 1% 0; }
+
+.item img {
+  width: 100%;
+  display: block; }
+
+@media (max-width: 654px) {
+  .item {
+    width: 50%; } }
+
+@media (max-width: 500px) {
+  .gallery {
+    background-color: #cce500; }
+  .item {
+    width: 100%;
+    margin: 2% 0; } }

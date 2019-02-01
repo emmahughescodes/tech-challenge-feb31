@@ -1,0 +1,32 @@
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: calc(100% / 3);
+    margin: 1% 0;
+    
+}
+
+.item img {
+    width: 100%;
+    display: block;
+}
+
+@media  (max-width: 654px) {
+    .item {
+        width: 50%;
+    }
+}
+
+@media  (max-width: 500px) {
+    .gallery {
+        background-color: #cce500;
+    }
+    .item {
+        width: 100%;
+        margin: 2% 0;
+    }
+}
